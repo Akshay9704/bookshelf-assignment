@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
         <BookContextProvider>
+          <Header />
           <Routes>
             <Route exact path="/" element={<Books />} />
             <Route exact path="/bookshelf" element={<BookShelf />} />
